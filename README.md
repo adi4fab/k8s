@@ -5,7 +5,7 @@ Kubernetes manifests and local cluster config.
 ## Layout
 
 ```
-kind-config.yaml          local cluster, for development
+kind/                     local cluster config
 helm/                     charts
 kustomize/                overlays
 gitops/                   ArgoCD / Flux definitions
@@ -14,7 +14,7 @@ gitops/                   ArgoCD / Flux definitions
 ## Local cluster
 
 ```console
-kind create cluster --config kind-config.yaml
+kind create cluster --config kind/kind-config.yaml
 ```
 
 ## The four repos
